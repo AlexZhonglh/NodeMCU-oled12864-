@@ -8,12 +8,9 @@
 #endif
 
 U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ U8X8_PIN_NONE);
+
 unsigned char col[1024] = {};
-// U8X8_PROGMEM = {};
-//unsigned char col[1024] = {0xff};
-//unsigned char recv[1024];
 unsigned int n = 0;
-char str[10] = "";
 
 void setup(void) {
   u8g2.begin();
